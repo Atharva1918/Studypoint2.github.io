@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <title>StudyPoint(Div A)</title>
+</head>
+<body>
+    
+    <section id="header">
+      <div class="container">
+        <img src="images/logo.png" class="logo">
+      <div class="header-text">
+        <h1>The purpose is to <br> teach and get ideas from  students</h1>
+        <br><span class="square"></span>
+        <p>This is TE Div A class website. Our purpose is to teach and bring learning to students. We aim to implement new ideas and concepts in our division .</p>
+             <a href="about.html"> <button class="common-btn">Notifications..</button></a>
+              
+      </div>
+      </div>
+    </section>
+<nav id="sidenav">
+    <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#features">Study material</a></li>
+        <li><a href="#contact">Contact us</a></li>
+     </ul>
+</nav>
+<img src="images/menu.png" id="menubtn">
+
+
+<section id="about">
+    <div class="about-left-col">
+        <img src="images/about.png">
+    </div>
+    <div class="about-right-col">
+        <div class="about-text">
+            <h1>About us..</h1>
+          
+            <span class="square"></span>
+            <p>This is website of TE Div A class of Electronics and Telecommuncation departement , of Dr.D.Y.Patil institute of technology ,pune.
+                We aim to implement new ideas and concepts in our class. The objective of the website is to provide all 
+                the study material at one place and to facilitate communication among students on one platform. Our big support is our 
+                HOD Mr.D.G. Bhalke sir and our class teacher Ms. Vandana Katarwar. And also thanks to our class representative Pratik Jaiswal. </p><br><br>
+                <span class="square"></span>
+                <h2>" Start where you are. Use what you have. Do what you can..."
+                </h2>
+                <h3>---- Arthur Ashe </h3>
+        </div>
+    </div>
+</section>
+
+<section id="features">
+    <div class="features-row">
+        <div class="feature-col">
+            <img src="images/pic-1.png">
+            <h4>Study material</h4>
+            <p>choose what you'd like to learn from our division digital subject library</p>
+           <a href="study.html"> <button class="common-btn">Explore us..</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-2.png">
+            <h4>Previous papers</h4>
+            <p>Learn and enhance your abilities by practicing previous year university papers</p>
+           <a href="https://drive.google.com/drive/folders/1og9x2krUlbW2PLQ_p1CPZCK8dfQXeAu1"> <button class="common-btn">Explore us..</button></a>
+        </div>
+        <div class="feature-col">
+            <img src="images/pic-3.png">
+            <h4>Assignments</h4>
+            <p>Practice daily assignments to understand the concepts better</p>
+           <a href="assignments.html"> <button class="common-btn">Explore us..</button></a>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container contact-row">
+          <div class="contact-left-col">
+            <h1>Give your suggestions <br>and feedback to us </h1>
+           <a href="mailto:divaentc2025@gmail.com"> <button class="common-btn">Tell us..</button></a>
+          </div>
+          <div class="contact-right-col">
+          <img src="images/contact.png"></div>
+    </div>
+
+</section>
+<Section id="foot">
+    <div class="container">
+        <hr>
+       
+       
+    </div>
+</Section>
+<footer class="text-center">
+    <p>TE DIV A ENTC |Copyright © 2023 all rights reserved</p>
+  </footer>
+
+<script>
+    var menubtn=document.getElementById("menubtn");
+    var sidenav=document.getElementById("sidenav");
+
+    sidenav.style.right="-250px";
+    menubtn.onclick = function(){
+        if(sidenav.style.right== "-250px"){
+            sidenav.style.right="0";
+        }
+        else {
+            sidenav.style.right="-250px";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed:1100,
+        speedAsDuration: true
+    });
+</script>
+</body>
+</html>
